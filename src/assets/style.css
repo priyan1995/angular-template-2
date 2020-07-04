@@ -1,0 +1,22 @@
+.pd-navbar-sec{
+    background: #212d2a;
+}
+.pd-navbar-sec .nav-link {
+    color: white;
+}
+
+.pd-footer{
+    padding: 20px 0;
+    background: #212d2a;
+    color: white;
+}
+
+.pd-footer p{
+    margin: 0;
+}
+
+.pd-centred-nav{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
