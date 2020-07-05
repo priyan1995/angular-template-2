@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;     
+}
+
 .pd-navbar-sec{
-    background: #212d2a;
+    background: #232228;
 }
 .pd-navbar-sec .nav-link {
     color: white;
+    padding: 10px 15px !important;
+    font-family: 'Galada', cursive ; 
 }
 
 .pd-footer{
     padding: 20px 0;
-    background: #212d2a;
+    background: #232228;
     color: white;
 }
 
