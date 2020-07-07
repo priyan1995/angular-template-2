@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { HomeRoutingModule } from './home-page-routing-module';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 const components = [
   HomePageComponent
 ];
@@ -12,7 +14,8 @@ const components = [
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [HomePageComponent]

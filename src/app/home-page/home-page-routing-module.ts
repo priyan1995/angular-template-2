@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page.component';
 
 
+
 const routes: Routes = [ 
   {
     path: '',
@@ -14,4 +15,6 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: []
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {
+
+ }

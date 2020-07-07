@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faAward,faCloudUploadAlt,faCoins } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -11,5 +12,9 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  faAward = faAward;
+  faCloudUploadAlt = faCloudUploadAlt;
+  faCoins = faCoins;
 
 }
