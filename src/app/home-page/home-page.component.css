@@ -56,3 +56,9 @@
 	font-size: 50px;
     margin: 10px;
 }
+
+.number-counter{
+	padding: 5% 0;
+    background: #1b1a1f;
+    color: white;
+}
