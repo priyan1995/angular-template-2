@@ -62,3 +62,16 @@
     background: #1b1a1f;
     color: white;
 }
+
+.number-counter .col-lg-4{
+	padding: 20px;
+}
+
+.number-counter .pd-num-card {
+    background: #232228;
+    padding: 25px;
+}
+
+.number-counter .pd-num-card p{
+	margin-bottom:0;
+}
