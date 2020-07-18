@@ -2,8 +2,7 @@
 	cursor: pointer;
 	background-color: #1b1a1f;
 	color: #FFFFFF;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding: 3% 0;
 }
 .about h2 {
 	padding: 10px 0;
@@ -59,7 +58,7 @@
 
 
 .number-counter{
-	padding: 5% 0;
+	padding: 3% 0;
     background: #1b1a1f;
     color: white;
 }
@@ -75,4 +74,14 @@
 
 .number-counter .pd-num-card p{
 	margin-bottom:0;
+}
+
+.pd-gallary-sec{
+	background: #1b1a1f;
+	padding: 3% 0;
+}
+
+.pd-gallary-sec h2{
+	color: #ffffff91;
+    padding: 2% 0;
 }

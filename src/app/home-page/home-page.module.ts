@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page.component';
 import { HomeRoutingModule } from './home-page-routing-module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxImageGalleryModule } from 'ngx-image-gallery';
 
 const components = [
   HomePageComponent
@@ -15,7 +16,8 @@ const components = [
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxImageGalleryModule
   ],
   providers: [],
   bootstrap: [HomePageComponent]
