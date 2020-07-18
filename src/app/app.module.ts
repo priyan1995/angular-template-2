@@ -8,13 +8,15 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomePageComponent
+    HomePageComponent,
+     
     
     
   ],
@@ -22,7 +24,8 @@ import { NgxImageGalleryModule } from 'ngx-image-gallery';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgxImageGalleryModule
+    NgxImageGalleryModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

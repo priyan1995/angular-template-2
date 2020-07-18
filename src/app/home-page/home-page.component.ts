@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild  } from '@angular/core';
 import { faAward,faCloudUploadAlt,faCoins } from '@fortawesome/free-solid-svg-icons';
 
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home-page',
@@ -128,6 +129,33 @@ export class HomePageComponent implements OnInit {
   // callback on user clicked delete button
   deleteImage(index) {
     console.info('Delete image at index ', index);
+  }
+
+
+  // carousal
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: true
   }
 
 }

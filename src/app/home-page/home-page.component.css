@@ -1,3 +1,11 @@
+* {
+	color:#ffffff91;
+}
+
+section{
+	background-color: #1b1a1f;
+	padding:3% 0;
+}
 .about{
 	cursor: pointer;
 	background-color: #1b1a1f;
@@ -7,6 +15,7 @@
 .about h2 {
 	padding: 10px 0;
 	margin-bottom: 20px;
+	color: #ffffff91;
 }
 .about h3 {
 	opacity: .8;
@@ -47,7 +56,7 @@
 	transform: scale(1.1,1.1) ;
 }
 .about .lead{
-	color: #ffffffc7;
+	color: #ffffff91;
 	font-size: 14px;
 	font-weight: bold;
 }
