@@ -135,12 +135,13 @@ export class HomePageComponent implements OnInit {
   // carousal
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay:true,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['<', '>'],
     responsive: {
       0: {
         items: 1
@@ -152,7 +153,7 @@ export class HomePageComponent implements OnInit {
         items: 3
       },
       940: {
-        items: 4
+        items: 3
       }
     },
     nav: true

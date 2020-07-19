@@ -29,3 +29,8 @@ body{
     text-align: center;
     justify-content: center;
 }
+
+.pd-blog-slider-sec .owl-theme .owl-nav .owl-prev, .pd-blog-slider-sec .owl-theme .owl-nav .owl-next {
+	background: #232228 !important;
+	background-color: #232228 !important;
+}

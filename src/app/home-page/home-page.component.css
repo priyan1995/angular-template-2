@@ -94,3 +94,26 @@ section{
 	color: #ffffff91;
     padding: 2% 0;
 }
+
+.pd-blog-slider-sec .card{
+	background-color: #1b1a1f;
+	margin:10px !important;
+	border: none;
+    border-radius: 0;
+    box-shadow: 0px 6px 15px -6px #00000066;
+}
+
+.pd-blog-slider-sec h2{
+	padding:20px;
+}
+
+.pd-blog-slider-sec a:hover{
+	color:#ffffff91;
+	text-decoration: none;
+}
+
+.pd-blog-slider-sec a{
+	background: #232228;
+    padding: 5px 15px;
+}
+
