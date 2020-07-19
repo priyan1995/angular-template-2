@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.abt-body{
+.abt-body, .abt-slider{
     padding: 3% 0;
     background-color: #1b1a1f;
 }

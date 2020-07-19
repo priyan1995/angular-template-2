@@ -30,7 +30,8 @@ body{
     justify-content: center;
 }
 
-.pd-blog-slider-sec .owl-theme .owl-nav .owl-prev, .pd-blog-slider-sec .owl-theme .owl-nav .owl-next {
+.pd-blog-slider-sec .owl-theme .owl-nav .owl-prev, .pd-blog-slider-sec .owl-theme .owl-nav .owl-next,
+.abt-slider .owl-theme .owl-nav .owl-prev, .abt-slider .owl-theme .owl-nav .owl-next {
 	background: #232228 !important;
 	background-color: #232228 !important;
 }

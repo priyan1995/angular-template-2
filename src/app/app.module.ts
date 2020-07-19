@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AppRoutingModule,
     FontAwesomeModule,
     NgxImageGalleryModule,
-    CarouselModule
+    CarouselModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
