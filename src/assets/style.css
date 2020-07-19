@@ -34,3 +34,10 @@ body{
 	background: #232228 !important;
 	background-color: #232228 !important;
 }
+
+.pd-inner-header{
+    background-size: cover;
+    height:200px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
