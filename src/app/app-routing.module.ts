@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path:'about-us',
     component: AboutUsComponent
-  }
+  },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) }
 ];
 
 @NgModule({
