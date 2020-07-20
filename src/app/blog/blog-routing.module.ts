@@ -3,7 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BlogComponent } from './blog.component';
 
-const routes: Routes = [{ path: '', component: BlogComponent }];
+const routes: Routes = [{ 
+  path: 'view', 
+  component: BlogComponent 
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
