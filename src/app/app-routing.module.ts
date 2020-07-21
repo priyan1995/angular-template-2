@@ -24,7 +24,8 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent
-  }
+  },
+  { path: 'services-page', loadChildren: () => import('./services-page/services-page.module').then(m => m.ServicesPageModule) }
 ];
 
 @NgModule({
