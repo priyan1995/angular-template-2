@@ -12,6 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactUsComponent } from './contact-us/contact-us.component'; 
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     HomePageComponent,
     AboutUsComponent,
-    ContactUsComponent    
+    ContactUsComponent ,
+    ServicesComponent   
   ],
   imports: [
     BrowserModule,
