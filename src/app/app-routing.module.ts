@@ -24,9 +24,6 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent
-  },
-  { path: 'services',
-   loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) 
   }
 ];
 
