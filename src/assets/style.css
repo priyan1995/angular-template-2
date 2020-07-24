@@ -43,3 +43,7 @@ body{
     background-repeat: no-repeat;
 }
 
+.bg-def{
+    background: #232228;
+    color: white;
+}

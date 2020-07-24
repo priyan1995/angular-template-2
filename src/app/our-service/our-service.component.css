@@ -1,0 +1,16 @@
+.o-s-body{
+    padding: 3% 0;
+}
+
+.o-s-body .row{
+    padding: 3% 0;
+}
+
+.o-s-body a{
+    color:white
+}
+
+.o-s-body:hover{
+    color: white;
+    text-decoration: none;
+}
