@@ -10,7 +10,7 @@
     color:white
 }
 
-.o-s-body:hover{
+.o-s-body a:hover{
     color: white;
     text-decoration: none;
 }
