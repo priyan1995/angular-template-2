@@ -3,10 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { OurServiceRoutingModule } from './our-service-routing.module';
 import { OurServiceComponent } from './our-service.component';
+import { OurServiceSingleComponent } from './our-service-single/our-service-single.component';
+
 
 
 @NgModule({
-  declarations: [OurServiceComponent],
+  declarations: [
+    OurServiceComponent, 
+    OurServiceSingleComponent
+  ],
   imports: [
     CommonModule,
     OurServiceRoutingModule

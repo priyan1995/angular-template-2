@@ -47,3 +47,7 @@ body{
     background: #232228;
     color: white;
 }
+
+a{
+    cursor: pointer;
+}
