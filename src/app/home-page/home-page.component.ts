@@ -4,14 +4,15 @@ import { faAward,faCloudUploadAlt,faCoins } from '@fortawesome/free-solid-svg-ic
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+import { AngularFireDatabase } from '@angular/fire/database';
+import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
-
   // get reference to gallery component
   @ViewChild(NgxImageGalleryComponent) ngxImageGallery: NgxImageGalleryComponent;
   
@@ -50,7 +51,16 @@ export class HomePageComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  Homepage: any
+
+  constructor( db: AngularFireDatabase ) {
+
+    db.list('/Home-page').valueChanges()
+    .subscribe(Homepage =>{
+      this.Homepage = Homepage;     
+    });
+
+   }
 
   ngOnInit(): void {
     function animateValue(id, start, end, duration) {
@@ -158,5 +168,9 @@ export class HomePageComponent implements OnInit {
     },
     nav: true
   }
+
+
+
+
 
 }

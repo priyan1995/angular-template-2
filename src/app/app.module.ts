@@ -13,6 +13,11 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactUsComponent } from './contact-us/contact-us.component'; 
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NgxImageGalleryModule,
     CarouselModule,
     BrowserModule,
-    BrowserAnimationsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
+    
     
   ],
   providers: [],
