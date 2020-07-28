@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    
+
 
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -34,13 +34,13 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" *ngFor="let aboutHome of Homepage_about"
+        data-wow-offset="200">
         <fa-icon [icon]="faAward"></fa-icon>
-        <h3>Section 1</h3>
-        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever since the 1500s.</p>
+        <h3>{{aboutHome.title}}</h3>
+        <p class="lead">{{aboutHome.description}}</p>
       </div>
-      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+      <!-- <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
         <fa-icon [icon]="faCloudUploadAlt"></fa-icon>
         <h3>Section 2 </h3>
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -52,7 +52,7 @@
         <h3>Section 3</h3>
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
           the industry's standard dummy text ever since the 1500s.</p>
-      </div>
+      </div> -->
 
     </div>
 
@@ -65,28 +65,28 @@
     <div class="row">
 
       <!-- number card -->
-      <div class="col-lg-4">
+      <div class="col-lg-4" *ngFor = "let status of Homepage_status; let i = index" >
         <div class="pd-num-card text-center">
-          <h2 id="value"></h2>
-          <p>Total Projects</p>
+          <h2 id="val{{i+1}}">{{status.amount}}</h2>
+          <p>{{status.title}}</p>
         </div>
       </div>
 
-      <!-- number card -->
-      <div class="col-lg-4">
+     <h1 id="id1">500</h1>
+      <!-- <div class="col-lg-4">
         <div class="pd-num-card text-center">
           <h2 id="value2"></h2>
           <p>Happy Clients</p>
         </div>
       </div>
 
-      <!-- number card -->
+      
       <div class="col-lg-4">
         <div class="pd-num-card text-center">
           <h2 id="value3"></h2>
           <p>Total Products</p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
