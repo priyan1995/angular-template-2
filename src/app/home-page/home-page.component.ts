@@ -53,6 +53,7 @@ export class HomePageComponent implements OnInit {
 
   Homepage: any
   Homepage_about:any
+  Homepage_status:any
 
   constructor( db: AngularFireDatabase ) {
 
@@ -66,27 +67,84 @@ export class HomePageComponent implements OnInit {
       this.Homepage_about = Homepage_about;     
     });
 
+    db.list('/status-home').valueChanges()
+    .subscribe(Homepage_status =>{
+      this.Homepage_status = Homepage_status;     
+    });
+
    }
 
   ngOnInit(): void {
-    function animateValue(id, start, end, duration) {
-      var range = end - start;
-      var current = start;
-      var increment = end > start? 1 : -1;
-      var stepTime = Math.abs(Math.floor(duration / range));
-      var obj = document.getElementById(id);
-      var timer = setInterval(function() {
-          current += increment;
-          obj.innerHTML = current;
-          if (current == end) {
-              clearInterval(timer);
-          }
-      }, stepTime);
-  }
+  //   function animateValue(id, start, end, duration) {
+  //     var range = end - start;
+  //     var current = start;
+  //     var increment = end > start? 1 : -1;
+  //     var stepTime = Math.abs(Math.floor(duration / range));
+  //     var obj = document.getElementById(id);
+  //     var timer = setInterval(function() {
+  //         current += increment;
+  //         obj.innerHTML = current;
+  //         if (current == end) {
+  //             clearInterval(timer);
+  //         }
+  //     }, stepTime);
+  // }
   
-  animateValue("value", 50, 140, 5000);
-  animateValue("value2", 100, 250, 5000);
-  animateValue("value3", 50, 145, 5000);
+  // animateValue("value", 50, 140, 5000);
+  // animateValue("value2", 100, 250, 5000);
+  // animateValue("value3", 50, 145, 5000);
+
+
+// new number counter
+  function animateValue(obj, start = 0, end = null, duration = 5000) {
+    if (obj) {
+
+        // save starting text for later (and as a fallback text if JS not running and/or google)
+        var textStarting = obj.innerHTML;
+
+        // remove non-numeric from starting text if not specified
+        end = end || parseInt(textStarting.replace(/\D/g, ""));
+
+        var range = end - start;
+
+        // no timer shorter than 50ms (not really visible any way)
+        var minTimer = 50;
+
+        // calc step time to show all interediate values
+        var stepTime = Math.abs(Math.floor(duration / range));
+
+        // never go below minTimer
+        stepTime = Math.max(stepTime, minTimer);
+
+        // get current time and calculate desired end time
+        var startTime = new Date().getTime();
+        var endTime = startTime + duration;
+        var timer;
+
+        function run() {
+            var now = new Date().getTime();
+            var remaining = Math.max((endTime - now) / duration, 0);
+            var value = Math.round(end - (remaining * range));
+            // replace numeric digits only in the original string
+            obj.innerHTML = textStarting.replace(/([0-9]+)/g, value);
+            if (value == end) {
+                clearInterval(timer);
+            }
+        }
+
+        timer = setInterval(run, stepTime);
+        run();
+    }
+}
+
+animateValue(document.getElementById('val1'));
+
+animateValue(document.getElementById('id1'));
+
+
+
+
+
   }
 
   faAward = faAward;
