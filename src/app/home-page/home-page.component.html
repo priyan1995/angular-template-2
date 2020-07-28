@@ -34,13 +34,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn"  *ngFor="let aboutHome of Homepage_about" data-wow-offset="200">
         <fa-icon [icon]="faAward"></fa-icon>
-        <h3>Section 1</h3>
-        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever since the 1500s.</p>
+        <h3>{{aboutHome.title}}</h3>
+        <p class="lead">{{aboutHome.description}}</p>
       </div>
-      <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+      <!-- <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
         <fa-icon [icon]="faCloudUploadAlt"></fa-icon>
         <h3>Section 2 </h3>
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -52,7 +51,7 @@
         <h3>Section 3</h3>
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
           the industry's standard dummy text ever since the 1500s.</p>
-      </div>
+      </div> -->
 
     </div>
 

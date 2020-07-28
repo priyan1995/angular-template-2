@@ -52,12 +52,18 @@ export class HomePageComponent implements OnInit {
   ];
 
   Homepage: any
+  Homepage_about:any
 
   constructor( db: AngularFireDatabase ) {
 
     db.list('/Home-page').valueChanges()
     .subscribe(Homepage =>{
       this.Homepage = Homepage;     
+    });
+
+    db.list('/home-about').valueChanges()
+    .subscribe(Homepage_about =>{
+      this.Homepage_about = Homepage_about;     
     });
 
    }
