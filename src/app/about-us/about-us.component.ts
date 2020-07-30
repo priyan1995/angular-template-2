@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-about-us',
@@ -7,8 +8,27 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
+  
+  about_page;
+  tit:any;
+  bnImg;
+  mainIm
 
-  constructor() { }
+  constructor(db: AngularFireDatabase) { 
+
+    db.list('/about-page').valueChanges()
+      .subscribe(about_page => {
+        
+        this.about_page = about_page;
+        var abt = this.about_page[0];
+        this.tit = abt.title;
+        this.bnImg = abt.banner;
+        this.mainIm = abt.mainImg;
+
+
+      });
+
+  }
 
   ngOnInit(): void {
   }
