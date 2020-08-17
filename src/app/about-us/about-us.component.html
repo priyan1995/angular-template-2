@@ -30,27 +30,10 @@
 
                 <owl-carousel-o [options]="customOptions2">
                     <!-- item -->
-                    <ng-template carouselSlide>
-                        <img src="../../assets/img/slider-3.jpg">
+                    <ng-template carouselSlide *ngFor ="let about_slider_bottom of abt_slid; let i = index">
+                        <img src="{{about_slider_bottom.image}}">                    
                     </ng-template>
-
-                    <!-- item -->
-                    <ng-template carouselSlide>
-                        <img src="../../assets/img/slider-2.jpg">
-                    </ng-template>
-
-                    <!-- item -->
-                    <ng-template carouselSlide>
-                        <img src="../../assets/img/slider-1.jpg">
-                    </ng-template>
-
-                    <!-- item -->
-                    <ng-template carouselSlide>
-                        <img src="../../assets/img/slider-2.jpg">
-                    </ng-template>
-
                 </owl-carousel-o>
-
 
             </div>
         </div>

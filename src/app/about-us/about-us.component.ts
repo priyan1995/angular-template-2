@@ -13,7 +13,8 @@ export class AboutUsComponent implements OnInit {
   tit:any;
   bnImg;
   mainIm;
-  desc
+  desc;
+  abt_slid;
 
   constructor(db: AngularFireDatabase) { 
 
@@ -27,7 +28,11 @@ export class AboutUsComponent implements OnInit {
         this.mainIm = abt.mainImg;
         this.desc = abt.main_desc;
 
+      });
 
+    db.list('/about-page/2').valueChanges()
+      .subscribe(about_page2 => {
+        this.abt_slid = about_page2;
       });
 
   }
