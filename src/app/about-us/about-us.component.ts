@@ -12,7 +12,8 @@ export class AboutUsComponent implements OnInit {
   about_page;
   tit:any;
   bnImg;
-  mainIm
+  mainIm;
+  desc
 
   constructor(db: AngularFireDatabase) { 
 
@@ -24,6 +25,7 @@ export class AboutUsComponent implements OnInit {
         this.tit = abt.title;
         this.bnImg = abt.banner;
         this.mainIm = abt.mainImg;
+        this.desc = abt.main_desc;
 
 
       });
