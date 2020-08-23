@@ -44,6 +44,7 @@ export class HomePageComponent implements OnInit {
   Homepage_about: any;
   Homepage_status: any;
   homepage_gallary = [];
+  blog_home: any[];
 
   constructor(db: AngularFireDatabase) {
 
@@ -61,6 +62,12 @@ export class HomePageComponent implements OnInit {
     db.list('/home-about').valueChanges()
       .subscribe(Homepage_about => {
         this.Homepage_about = Homepage_about;
+     
+      });
+
+      db.list('/blog').valueChanges()
+      .subscribe(blog_home => {
+        this.blog_home = blog_home;
      
       });
 
