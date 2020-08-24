@@ -29,9 +29,6 @@ export class OurServiceComponent implements OnInit {
     db.list('/service/service_items').valueChanges()
     .subscribe(o_service_itm => {
       this.o_service_itm = o_service_itm;
-      console.log(this.o_service_itm);
-
-     
 
     });
 

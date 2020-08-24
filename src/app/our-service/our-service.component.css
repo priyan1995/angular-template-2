@@ -14,3 +14,11 @@
     color: white;
     text-decoration: none;
 }
+
+.o-s-body .row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.o-s-body .row:nth-child(even) .col-lg-6{
+    text-align: right;
+}
