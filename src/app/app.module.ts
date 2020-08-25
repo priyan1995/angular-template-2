@@ -17,6 +17,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
  
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomePageComponent,
     AboutUsComponent,
-    ContactUsComponent    
+    ContactUsComponent,
+    PageNotFoundComponent    
   ],
   imports: [
     BrowserModule,
