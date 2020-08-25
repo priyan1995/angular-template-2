@@ -8,6 +8,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {
+    path: '', redirectTo: '', pathMatch: 'full'
+  },
+  {
+    path: '**', component: 
+  },
+  {
     path: '',
     component: HomePageComponent,
     loadChildren: () => import('./home-page/home-page.module').then(m => m.HomeModule)
