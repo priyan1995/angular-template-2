@@ -1,0 +1,23 @@
+.page-sec-404{
+    padding: 5%;
+    height: 100vh;
+    color: white;
+    background: black;
+}
+
+.page-sec-404 h1{
+    font-size: 190px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-sec-404 h3{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.page-sec-404 a{
+    color: white;
+    padding: 20px;
+    display: block;
+}
