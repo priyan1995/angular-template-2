@@ -9,15 +9,20 @@
     <div class="container">
 
 
-        <div class="row" *ngFor = "let serv_items of o_service_itm ">
-            <div class="col-lg-6">
-                <img src="{{serv_items.image}}" class="w-100">
-            </div>
+        <div class="row" *ngFor = "let serv_items of o_service_itm | keyvalue">
+
+            <!-- {{ serv_items | json }} -->
 
             <div class="col-lg-6">
-                <h2>{{serv_items.title}}</h2>
-                <p>{{serv_items.description_short}}</p>
-                <a routerLink="service-single">Read More</a>
+                <img src="{{serv_items.value.image}}" class="w-100">
+            </div>
+
+           
+
+            <div class="col-lg-6">
+                <h2>{{serv_items.value.title}}</h2>
+                <p>{{serv_items.value.description_short}}</p>
+                <a routerLink="./service-single/{{serv_items.key}}">Read More</a>
             </div>
         </div>
        

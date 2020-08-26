@@ -10,6 +10,8 @@ export class OurServiceSingleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
