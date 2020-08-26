@@ -12,7 +12,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 export class OurServiceComponent implements OnInit {
 
   our_services;
-  o_service_itm:any[];
+  o_service_itm:any;
   o_s_i;
   mainimage;
   main_serv_title;
@@ -24,12 +24,13 @@ export class OurServiceComponent implements OnInit {
     db.list('/service').valueChanges()
     .subscribe(our_services => {
       this.our_services = our_services;
+      // console.log(this.our_services[1])
     });
 
-    db.list('/service/service_items').valueChanges()
+    db.list('/service').valueChanges()
     .subscribe(o_service_itm => {
-      this.o_service_itm = o_service_itm;
-
+      this.o_service_itm = o_service_itm[1];
+      // console.log(this.o_service_itm);
     });
 
   }

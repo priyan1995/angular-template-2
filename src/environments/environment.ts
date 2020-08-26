@@ -16,6 +16,28 @@ export const environment = {
   }
 };
 
+
+// export const snapshotToArray = snapshot => {
+//   const returnArray = [];
+//   snapshot.forEach(element => {
+//     const item = element.val();
+//     item.key = element.key;
+//     returnArray.push(item);
+//   });
+
+//   return returnArray;
+// }
+
+// export const snapshotToObject = snapshot => {
+//   const returnObject = {};
+//   snapshot.forEach(element => {
+//     // let item = element.val();
+//     // item.key = element.key;
+//     returnObject[element.key] = element.val();
+//   });
+
+//   return returnObject;
+// }
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

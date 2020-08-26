@@ -10,7 +10,7 @@ const routes: Routes = [
     component: OurServiceComponent
   },
   {
-    path: 'service-single',
+    path: 'service-single/:id',
     component: OurServiceSingleComponent
   }
 ];
