@@ -36,6 +36,7 @@ export class OurServiceComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
 }
